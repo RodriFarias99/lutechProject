@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <link rel="shortcut icon" href=""   type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">        <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@1,100;1,200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a9c3ae206a.js" crossorigin="anonymous"></script>
+    <title>Lutech.arg</title>
+</head>
+<body>
+    <header class="row justify-content-center">
+        <div class="upBar d-flex justify-content-center align-items-center col-12 m-1 p-0">
+            <p class="col-6 topText">Podes abonar una parte en USD y la otra en Pesos</p>
+            <div class="container row col-2">
+                <p class="col-6 d-flex align-items-center justify-content-center my-3" id="userWelcome"></p>
+                <a href="./pages/login.html" id="logoUser" class="d-flex align-items-center justify-content-center fa-xl fa-regular fa-user col-2 m-3 p-3"></a>
+            </div>
+            <a  href="#" id="sidebarCollapse" class="d-flex align-items-center justify-content-center fa-xl fa-solid fa-basket-shopping col-2" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample"></a>
+        </div>
+        <div class="row topNav">
+            <nav class="navbar navbar-dark">
+                <div class="navigationBar row d-flex justify-content-between align-items-center container-fluid">
+                    <a  class=" col-3 logo" href="index.html"><h1>LuTech</h1></a>
+                    <input type="text" id="formulario" class="searchBar col-6 col-md-6" placeholder="Busfsdsdfsfdcar">
+                    <button class="col-2 navbar-toggler btnMenu" data-bs-toggle="collapse" href="#collapseMenu" role="button" aria-expanded="false" aria-controls="collapseMenu">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </nav>
+        </div>
+        <div class="row collapse containerMenu" id="collapseMenu">
+            <div class="p-4 boxMenuList">
+                <ul class="list-group menuList">
+                    <div class="boxList">
+                        <li><a class="list-group-item" href="index.html">Inicio</a></li>
+                        <li><a class="list-group-item" href="./pages/products.html">Productos</a></li>
+                        <li><a class="list-group-item" href="./pages/contact.html">Contacto</a></li>
+                        <li><a class="list-group-item" href="./pages/aboutUs.html">Quiénes Somos</a></li>
+                    </div>
+                </ul>    
+            </div>
+        </div>
+    </header>
+    <main class="d-flex row align-items-center justify-content-center">
+        <div style="min-height: 120px;">
+            <div class="collapse collapse-horizontal carrito" id="collapseWidthExample">
+                <div class="card card-body tarjeta row" style="width: 400px;">
+                    <h5>Tu Carrito</h5>
+                    <div id="contenedorCarrito"></div>
+                    <hr>
+                    <p class="text-right">Total: <div id="totalCarrito"></div></p>
+                    <div class="row d-flex">
+                        <button id="vaciarCarrito" class="col-5 mx-3 btn botonEliminar">Vaciar</button>
+                        <button id="botonComprar" class="col-5 btn botonComprar">Comprar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box1 row col-3 m-3 p-3">
+            <img src="./assets/img/prueba.png" class="col-10 img-thumbnail m-2" alt="...">
+            <div class="bodyTarjeta row container">
+                <h5 class="col-12">Nintendo Switch</h5>
+                <p class="col-12">Nintendo Switch OLED 64GB Standard color rojo neón, azul neón y negro</p>
+                <p class="col-12">Valor: $465.000</p>
+                <button class="col-8 mx-1 my-3 d-flex justify-content-center align-content-center button" id="A">Agregar al Carrito</button>
+            </div>
+        </div>
+        <div class="box1 row col-3 m-3 p-3">
+            <img src="./assets/img/prueba.png" class="col-10 img-thumbnail m-2" alt="...">
+            <div class="bodyTarjeta row container">
+                <h5 class="col-12">Nintendo Switch</h5>
+                <p class="col-12">Nintendo Switch OLED 64GB Standard color rojo neón, azul neón y negro</p>
+                <p class="col-12">Valor: $465.000</p>
+                <button class="col-8 mx-1 my-3 d-flex justify-content-center align-content-center button" id="A">Agregar al Carrito</button>
+            </div>
+        </div>
+        <div class="box1 row col-3 m-3 p-3">
+            <img src="./assets/img/prueba.png" class="col-10 img-thumbnail m-2" alt="...">
+            <div class="bodyTarjeta row container">
+                <h5 class="col-12">Nintendo Switch</h5>
+                <p class="col-12">Nintendo Switch OLED 64GB Standard color rojo neón, azul neón y negro</p>
+                <p class="col-12">Valor: $465.000</p>
+                <button class="col-8 mx-1 my-3 d-flex justify-content-center align-content-center button" id="A">Agregar al Carrito</button>
+            </div>
+        </div>
+        <div class="box1 row col-3 m-3 p-3">
+            <img src="./assets/img/prueba.png" class="col-10 img-thumbnail m-2" alt="...">
+            <div class="bodyTarjeta row container">
+                <h5 class="col-12">Nintendo Switch</h5>
+                <p class="col-12">Nintendo Switch OLED 64GB Standard color rojo neón, azul neón y negro</p>
+                <p class="col-12">Valor: $465.000</p>
+                <button class="col-8 mx-1 my-3 d-flex justify-content-center align-content-center button" id="A">Agregar al Carrito</button>
+            </div>
+        </div>
+        <div class="box1 row col-3 m-3 p-3">
+            <img src="./assets/img/prueba.png" class="col-10 img-thumbnail m-2" alt="...">
+            <div class="bodyTarjeta row container">
+                <h5 class="col-12">Nintendo Switch</h5>
+                <p class="col-12">Nintendo Switch OLED 64GB Standard color rojo neón, azul neón y negro</p>
+                <p class="col-12">Valor: $465.000</p>
+                <button class="col-8 mx-1 my-3 d-flex justify-content-center align-content-center button" id="A">Agregar al Carrito</button>
+            </div>
+        </div>
+    </main>
+    <footer class="row container-fluid text-center d-flex align-items-center justify-content-center">
+        <div class="row my-4 col-12 col-xl-4">
+            <a href="#" class="col-12">Como Comprar</a>
+            <a href="./pages/contact.html" class="col-12">Contacto</a>
+            <a href="./pages/aboutUs.html" class="col-12">Quienes Somos</a>
+        </div>
+        <div class="row my-4 col-12 col-xl-4 redes">
+                <a href="https://www.instagram.com" target="_blank" class="fa-brands fa-instagram fa-2xl ig col-3"></a>
+                <a href="https://www.facebook.com" target="_blank" class="fa-brands fa-facebook-square fa-2xl fb col-3"></a>
+                <a href="https://www.youtube.com" target="_blank" class="fa-brands fa-youtube fa-2xl Yt col-3"></a>
+                <a href="https://www.gmail.com" target="_blank" class="fa-solid fa-envelope fa-2xl gmail col-3"></a>
+        </div>
+        <div class="col-12 col-xl-4 py-5"><h5>©2023 RF Coding, All rights reserved.</h5></div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>

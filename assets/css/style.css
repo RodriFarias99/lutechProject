@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@200&display=swap");
+*{
+    text-decoration: none;
+    font-family: 'Urbanist', sans-serif;
+    color: white;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    &:hover{
+        color: #2bc8c0;
+    }
+}
+
+
+.upBar{
+    background-color: #15545e;
+    border-radius: 10px;
+}
+.topText{
+    font-size: 1.5rem;
+}
+
+body{
+    overflow-x: hidden;
+    background-color: #0f4452;
+}
+header{
+    background-color:#187178;
+}
+.box1{
+    border-radius: 10px;
+    background: linear-gradient(105deg, #15545e 39%, #187178);
+    color: white;
+    font-weight: bold;
+}
+
+.boxMenuList{
+    .boxList{
+        li{
+            color: red;
+            list-style: none;
+        }
+    }
+}
+
+.carrito {
+    min-width: 250px;
+    max-width: 600px;
+    height: auto;
+    position: fixed;
+    top: 135px;
+    right: 0;
+    z-index: 9999;
+}
+
+.tarjeta{
+    background: linear-gradient(105deg, #15545e 39%, #187178);
+    border: 2px solid;
+    border-radius: 10px;
+    color: white;
+    img{
+        border: 0px;
+    }
+}
+
+.button{
+    color:#15545e;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bolder;
+    max-height: 35px;
+    &:hover{
+        border: solid #187178;
+        color: #2bc8c0;
+    }
+}
+footer{
+    background: linear-gradient(105deg, #104750 19%, #1c747a);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
