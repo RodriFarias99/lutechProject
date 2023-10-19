@@ -82,3 +82,40 @@ footer{
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
 }
+.containerUser{
+    margin-top: 8.5rem;
+    position: fixed;
+    z-index: 999;
+}
+.boxList{
+    border: solid 5px #2bc8c0;;
+    z-index: 9999;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.priceList{
+    border: solid 3px white;;
+    border-radius: 10px;
+    background: linear-gradient(105deg, #187178 49%, #2bc8c0);
+}
+
+tr{
+    border: solid 1px;
+}
+td{
+
+    border: solid 1px;
+
+}
+.btn{
+    color: white;
+}
+
+.dolarBox{
+    background-color: white;
+}
+
+.filtroProductos{
+    border-bottom: solid 1px #2bc8c0;
+}
