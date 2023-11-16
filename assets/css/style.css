@@ -14,7 +14,10 @@ a{
     }
 }
 
-
+.searchBar{
+    color: #15545e;
+    font-weight:800;
+}
 .upBar{
     background-color: #15545e;
     border-radius: 10px;
@@ -67,14 +70,17 @@ header{
 }
 
 .button{
-    color:#15545e;
+    background: linear-gradient(105deg, #104750 19%, #1c747a);
+        border: solid #187178;
+        color: #2bc8c0;
     border-radius: 8px;
     font-size: 18px;
     font-weight: bolder;
     max-height: 35px;
     &:hover{
-        border: solid #187178;
-        color: #2bc8c0;
+        background: linear-gradient(105deg, #104750 19%, #1c747a);
+        border: solid white;
+        color: white;
     }
 }
 footer{
@@ -118,4 +124,8 @@ td{
 
 .filtroProductos{
     border-bottom: solid 1px #2bc8c0;
+}
+h5{
+    font-weight: bolder;
+    font-style: oblique;
 }

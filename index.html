@@ -11,36 +11,18 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a9c3ae206a.js" crossorigin="anonymous"></script>
-    <title>Lutech.arg</title>
+    <title>TecnoLu</title>
 </head>
 <body>
     <header class="row justify-content-center">
-        <div class="upBar d-flex justify-content-center align-items-center col-12 m-1 p-0">
+        <div class="upBar d-flex justify-content-center col-12 m-0 p-2">
             <p class="col-6 topText">Podes abonar una parte en USD y la otra en Pesos</p>
-            <div class="container row col-2 align-items-center">
-                <p class="col-6 d-flex align-items-center justify-content-center my-3" id="userWelcome"></p>
-                <a class="col-2 fa-xl fa-regular fa-user" data-bs-toggle="collapse" href="#collapseUser" role="button" aria-expanded="false" aria-controls="collapseUser"></a>
-                <div class="row collapse containerUser" id="collapseUser">
-                    <div class="p-3 col-3 boxMenuList">
-                        <ul class="list-group menuList">
-                            <div class="boxList">
-                                <li><a class="list-group-item" href="./pages/login.html">Ingresar</a></li>
-                                <li><a class="list-group-item bajo" href="./pages/register.html">Registrarse</a></li>
-                            </div>
-                        </ul>    
-                    </div>
-                </div>
-            </div>
-            <a  href="#" id="sidebarCollapse" class="d-flex align-items-center justify-content-center fa-xl fa-solid fa-basket-shopping col-2" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample"></a>
         </div>
         <div class="row topNav">
             <nav class="navbar navbar-dark">
-                <div class="navigationBar row d-flex justify-content-between align-items-center container-fluid">
-                    <a  class=" col-3 logo mx-5" href="index.html"><h1>LuTech</h1></a>
-                    <input type="text" id="formulario" class="searchBar col-6 col-md-6" placeholder="Buscar">
-                    <button class="col-2 navbar-toggler btnMenu" data-bs-toggle="collapse" href="#collapseMenu" role="button" aria-expanded="false" aria-controls="collapseMenu">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+                <div class="navigationBar row d-flex justify-content-center align-items-center container-fluid">
+                    <a  class=" col-5 logo px-3 mx-0 col-md-2" href="index.html"><h1>TecnoLu</h1></a>
+                    <input type="text" id="formulario" class="searchBar col-6 col-md-9" placeholder="Buscar">
                 </div>
             </nav>
         </div>
@@ -58,49 +40,19 @@
         </div>
     </header>
     <main class="d-flex row align-items-center justify-content-center">
-        <div>
-            <div class="collapse collapse-horizontal carrito" id="collapseWidthExample">
-                <div class="card card-body tarjeta row" style="width: 400px;">
-                    <h5>Tu Carrito</h5>
-                    <div id="contenedorCarrito"></div>
-                    <hr>
-                    <p class="text-right">Total: <div id="totalCarrito"></div></p>
-                    <div class="row d-flex">
-                        <button id="vaciarCarrito" class="col-5 mx-3 btn botonEliminar">Vaciar</button>
-                        <button id="botonComprar" class="col-5 btn botonComprar">Comprar</button>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <div class="row d-flex col-7" id="resultado"></div>
         <p class="filtroProductos mx-2">
-            <a class="btn mx-3" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Precio del Dólar hoy</a>
-            <button class="btn " type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Lista de Precios</button>
-            <button class="btn " type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample3">Productos</button>
-            <button class="btn " type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2 multiCollapseExample3">Mostrar Todo</button>
+            <a class="btn mx-3 p-2 col-md-1 col-5" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Precio del Dólar hoy</a>
+            <button class="btn col-md-1 col-5" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Lista de Precios</button>
+            <button class="btn col-md-1 col-5" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample3">Productos</button>
+            <button class="btn col-md-1 col-5" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2 multiCollapseExample3">Mostrar Todo</button>
         </p>
         <div style="min-height: 41rem" class="row align-items-center justify-content-center">
             <div class="row justify-content-center col-7 collapse multi-collapse" id="multiCollapseExample1">
                 <div class="row justify-content-center"><iframe class="dolarBox " style="width:20rem;height:18rem;border-radius:10px;box-shadow:2px 4px 4px rgb(0 0 0 / 25%);display:flex;justify-content:center;border:1px solid #bcbcbc" src="https://dolarhoy.com/i/cotizaciones/dolar-blue" frameborder="0"></iframe></div>
             </div>
-            <div class="row justify-content-center priceList collapse multi-collapse col-7 my-5 p-3" id="multiCollapseExample2">
-                <table>
-                    <tr>
-                        <th class="p-2">Producto</th>
-                        <th class="p-2">Valor</th>
-                    </tr>
-                    <tr>
-                        <td class="p-2">Samsung S23</td>
-                        <td class="p-2">$350 USD</td>
-                    </tr>
-                    <tr>
-                        <td class="p-2">Iphone 11 64GB</td>
-                        <td class="p-2">$450 USD</td>
-                    </tr>
-                    <tr>
-                        <td class="p-2">Iphone 12 Pro 128GB</td>
-                        <td class="p-2">$650 USD</td>
-                    </tr>
-              </table>
+            <div class="row justify-content-center priceList show multi-collapse col-7 my-5 p-3" id="multiCollapseExample2">
+                <table id="contenedorPrecios"></table>
             </div>
             <div class="row justify-content-center collapse multi-collapse" id="multiCollapseExample3">
                 <p class="filtroProductos">
@@ -108,78 +60,79 @@
                     <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExampleB" aria-expanded="false" aria-controls="multiCollapseExampleB">Consolas</button>
                     <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse2" aria-expanded="false" aria-controls="multiCollapseExampleA multiCollapseExampleB">Mostrar Todo</button>
                 </p>
-                <div class="row justify-content-center col-7 show multi-collapse2" id="multiCollapseExampleA">
+                <div class="row d-flex col-12 justify-content-center" id="contenedorProductos"></div>
+                <div class="row justify-content-center col-12 show multi-collapse2" id="multiCollapseExampleA">
                     <div><h2>Iphone</h2></div>
-                    <div class="box1 row col-3 m-3 p-3">
+                    <div class="box1 row col-12 col-md-3 m-3 p-3">
                         <img src="./assets/img/prueba.png" class="col-10 img-thumbnail m-2" alt="...">
                         <div class="bodyTarjeta row container">
                             <h5 class="col-12">Iphone 15 128GB</h5>
                             <p class="col-12">Valor: $1020 USD</p>
-                            <button class="col-8 mx-1 my-3 d-flex justify-content-center align-content-center button" id="A">Comprar</button>
+                            <a href="https://wa.me/1156634529?text=Hola!%20Me%20interesa%20un%20producto de su página,%20quisiera%20tener%20mas%20información." target="_blank" class="col-8 mx-1 my-3 d-flex justify-content-center align-content-center button" id="A">Consultar</a>
                         </div>
                     </div>
-                    <div class="box1 row col-3 m-3 p-3">
+                    <div class="box1 row col-12 col-md-3 m-3 p-3">
                         <img src="./assets/img/prueba.png" class="col-10 img-thumbnail m-2" alt="...">
                         <div class="bodyTarjeta row container">
                             <h5 class="col-12">Iphone 15 Pro 128GB</h5>
                             <p class="col-12">Valor: $1350 USD</p>
-                            <button class="col-8 mx-1 my-3 d-flex justify-content-center align-content-center button" id="A">Comprar</button>
+                            <a href="https://wa.me/1156634529?text=Hola!%20Me%20interesa%20un%20producto de su página,%20quisiera%20tener%20mas%20información." target="_blank" class="col-8 mx-1 my-3 d-flex justify-content-center align-content-center button" id="A">Consultar</a>
                         </div>
                     </div>
-                    <div class="box1 row col-3 m-3 p-3">
+                    <div class="box1 row col-12 col-md-3 m-3 p-3">
                         <img src="./assets/img/prueba.png" class="col-10 img-thumbnail m-2" alt="...">
                         <div class="bodyTarjeta row container">
                             <h5 class="col-12">Iphone 15 Pro 256GB</h5>
                             <p class="col-12">Valor: $1450 USD</p>
-                            <button class="col-8 mx-1 my-3 d-flex justify-content-center align-content-center button" id="A">Comprar</button>
+                            <a href="https://wa.me/1156634529?text=Hola!%20Me%20interesa%20un%20producto de su página,%20quisiera%20tener%20mas%20información." target="_blank" class="col-8 mx-1 my-3 d-flex justify-content-center align-content-center button" id="A">Consultar</a>
                         </div>
                     </div>
-                    <div class="box1 row col-3 m-3 p-3">
+                    <div class="box1 row col-12 col-md-3 m-3 p-3">
                         <img src="./assets/img/prueba.png" class="col-10 img-thumbnail m-2" alt="...">
                         <div class="bodyTarjeta row container">
                             <h5 class="col-12">Iphone 15 Pro Max 256GB</h5>
                             <p class="col-12">Valor: $1690 USD</p>
-                            <button class="col-8 mx-1 my-3 d-flex justify-content-center align-content-center button" id="A">Comprar</button>
+                            <a href="https://wa.me/1156634529?text=Hola!%20Me%20interesa%20un%20producto de su página,%20quisiera%20tener%20mas%20información." target="_blank" class="col-8 mx-1 my-3 d-flex justify-content-center align-content-center button" id="A">Consultar</a>
                         </div>
                     </div>
-                    <div class="box1 row col-3 m-3 p-3">
+                    <div class="box1 row col-12 col-md-3 m-3 p-3">
                         <img src="./assets/img/prueba.png" class="col-10 img-thumbnail m-2" alt="...">
                         <div class="bodyTarjeta row container">
                             <h5 class="col-12">Iphone 14 Pro Max 128GB</h5>
                             <p class="col-12">Valor: $1160 USD</p>
-                            <button class="col-8 mx-1 my-3 d-flex justify-content-center align-content-center button" id="A">Comprar</button>
+                            <a href="https://wa.me/1156634529?text=Hola!%20Me%20interesa%20un%20producto de su página,%20quisiera%20tener%20mas%20información." target="_blank" class="col-8 mx-1 my-3 d-flex justify-content-center align-content-center button" id="A">Consultar</a>
                         </div>
                     </div>
-                    <div class="box1 row col-3 m-3 p-3">
+                    <div class="box1 row col-12 col-md-3 m-3 p-3">
                         <img src="./assets/img/prueba.png" class="col-10 img-thumbnail m-2" alt="...">
                         <div class="bodyTarjeta row container">
                             <h5 class="col-12">Iphone 14 Pro Max 256GB</h5>
                             <p class="col-12">Valor: $1260 USD</p>
-                            <button class="col-8 mx-1 my-3 d-flex justify-content-center align-content-center button" id="A">Comprar</button>
+                            <a href="https://wa.me/1156634529?text=Hola!%20Me%20interesa%20un%20producto de su página,%20quisiera%20tener%20mas%20información." target="_blank" class="col-8 mx-1 my-3 d-flex justify-content-center align-content-center button" id="A">Consultar</a>
                         </div>
                     </div>
-                    <div class="box1 row col-3 m-3 p-3">
+                    <div class="box1 row col-12 col-md-3 m-3 p-3">
                         <img src="./assets/img/prueba.png" class="col-10 img-thumbnail m-2" alt="...">
                         <div class="bodyTarjeta row container">
                             <h5 class="col-12">Iphone 13 128GB</h5>
                             <p class="col-12">Valor: $730 USD</p>
-                            <button class="col-8 mx-1 my-3 d-flex justify-content-center align-content-center button" id="A">Comprar</button>
+                            <a href="https://wa.me/1156634529?text=Hola!%20Me%20interesa%20un%20producto de su página,%20quisiera%20tener%20mas%20información." target="_blank" class="col-8 mx-1 my-3 d-flex justify-content-center align-content-center button" id="A">Consultar</a>
                         </div>
                     </div>
-                    <div class="box1 row col-3 m-3 p-3">
+                    <div class="box1 row col-12 col-md-3 m-3 p-3">
                         <img src="./assets/img/prueba.png" class="col-10 img-thumbnail m-2" alt="...">
                         <div class="bodyTarjeta row container">
                             <h5 class="col-12">Iphone 11 64GB</h5>
                             <p class="col-12">Valor: $480 USD</p>
-                            <button class="col-8 mx-1 my-3 d-flex justify-content-center align-content-center button" id="A">Comprar</button>
+                            <a href="https://wa.me/1156634529?text=Hola!%20Me%20interesa%20un%20producto de su página,%20quisiera%20tener%20mas%20información." target="_blank" class="col-8 mx-1 my-3 d-flex justify-content-center align-content-center button" id="A">Consultar</a>
                         </div>
                     </div>
-                    <div class="box1 row col-3 m-3 p-3">
+                    <div class="box1 row col-12 col-md-3 m-3 p-3">
                         <img src="./assets/img/prueba.png" class="col-10 img-thumbnail m-2" alt="...">
                         <div class="bodyTarjeta row container">
                             <h5 class="col-12">Iphone XR 64GB</h5>
                             <p class="col-12">Valor: $390 USD</p>
-                            <button class="col-8 mx-1 my-3 d-flex justify-content-center align-content-center button" id="A">Comprar</button>
+                            <a href="https://wa.me/1156634529?text=Hola!%20Me%20interesa%20un%20producto de su página,%20quisiera%20tener%20mas%20información." target="_blank" class="col-8 mx-1 my-3 d-flex justify-content-center align-content-center button" id="A">Consultar</a>
                         </div>
                     </div>
                 </div>
@@ -259,8 +212,8 @@
             <a href="./pages/aboutUs.html" class="col-12">Quienes Somos</a>
         </div>
         <div class="row my-4 col-12 col-xl-4 redes">
-                <a href="https://www.instagram.com" target="_blank" class="fa-brands fa-instagram fa-2xl ig col-3"></a>
-                <a href="https://www.facebook.com" target="_blank" class="fa-brands fa-facebook-square fa-2xl fb col-3"></a>
+                <a href="https://www.instagram.com/tecnolu.arg" target="_blank" class="fa-brands fa-instagram fa-2xl ig col-3"></a>
+                <a href="https://wa.me/1156634529?" target="_blank" class="fa-brands fa-whatsapp fa-2xl fb col-3"></a>
                 <a href="https://www.youtube.com" target="_blank" class="fa-brands fa-youtube fa-2xl Yt col-3"></a>
                 <a href="https://www.gmail.com" target="_blank" class="fa-solid fa-envelope fa-2xl gmail col-3"></a>
         </div>
