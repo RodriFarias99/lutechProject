@@ -28,7 +28,7 @@
         </div>
     </header>
     <main class="d-flex row align-items-center justify-content-center">
-        <div class="row d-flex col-7" id="resultado"></div>
+        <div class="row d-flex col-12 justify-content-center" id="resultado"></div>
         <p class="filtroProductos mx-2">
             <a class="btn mx-3 p-2 col-md-1 col-5" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Precio del Dólar hoy</a>
             <button class="btn col-md-1 col-5" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Lista de Precios</button>
@@ -44,152 +44,11 @@
             </div>
             <div class="row justify-content-center collapse multi-collapse" id="multiCollapseExample3">
                 <p class="filtroProductos">
-                    <a class="btn" data-bs-toggle="collapse" href="#multiCollapseExampleA" role="button" aria-expanded="false" aria-controls="multiCollapseExampleA">Iphone</a>
-                    <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExampleB" aria-expanded="false" aria-controls="multiCollapseExampleB">Consolas</button>
-                    <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse2" aria-expanded="false" aria-controls="multiCollapseExampleA multiCollapseExampleB">Mostrar Todo</button>
+                    <a class="btn" data-bs-toggle="collapse" href="#multiCollapseExampleA" role="button" aria-expanded="false" aria-controls="multiCollapseExampleA" id="iphone">Iphone</a>
+                    <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExampleB" aria-expanded="false" aria-controls="multiCollapseExampleB" id="consola">Consolas</button>
+                    <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse2" aria-expanded="false" aria-controls="multiCollapseExampleA multiCollapseExampleB" id="todo"">Todo</button>
                 </p>
                 <div class="row d-flex col-12 justify-content-center" id="contenedorProductos"></div>
-                <div class="row justify-content-center col-12 show multi-collapse2" id="multiCollapseExampleA">
-                    <div><h2>Iphone</h2></div>
-                    <div class="box1 row col-12 col-md-3 m-3 p-3">
-                        <img src="./assets/img/prueba.png" class="col-10 img-thumbnail m-2" alt="...">
-                        <div class="bodyTarjeta row container">
-                            <h5 class="col-12">Iphone 15 128GB</h5>
-                            <p class="col-12">Valor: $1020 USD</p>
-                            <a href="https://wa.me/1156634529?text=Hola!%20Me%20interesa%20un%20producto de su página,%20quisiera%20tener%20mas%20información." target="_blank" class="col-8 mx-1 my-3 d-flex justify-content-center align-content-center button" id="A">Consultar</a>
-                        </div>
-                    </div>
-                    <div class="box1 row col-12 col-md-3 m-3 p-3">
-                        <img src="./assets/img/prueba.png" class="col-10 img-thumbnail m-2" alt="...">
-                        <div class="bodyTarjeta row container">
-                            <h5 class="col-12">Iphone 15 Pro 128GB</h5>
-                            <p class="col-12">Valor: $1350 USD</p>
-                            <a href="https://wa.me/1156634529?text=Hola!%20Me%20interesa%20un%20producto de su página,%20quisiera%20tener%20mas%20información." target="_blank" class="col-8 mx-1 my-3 d-flex justify-content-center align-content-center button" id="A">Consultar</a>
-                        </div>
-                    </div>
-                    <div class="box1 row col-12 col-md-3 m-3 p-3">
-                        <img src="./assets/img/prueba.png" class="col-10 img-thumbnail m-2" alt="...">
-                        <div class="bodyTarjeta row container">
-                            <h5 class="col-12">Iphone 15 Pro 256GB</h5>
-                            <p class="col-12">Valor: $1450 USD</p>
-                            <a href="https://wa.me/1156634529?text=Hola!%20Me%20interesa%20un%20producto de su página,%20quisiera%20tener%20mas%20información." target="_blank" class="col-8 mx-1 my-3 d-flex justify-content-center align-content-center button" id="A">Consultar</a>
-                        </div>
-                    </div>
-                    <div class="box1 row col-12 col-md-3 m-3 p-3">
-                        <img src="./assets/img/prueba.png" class="col-10 img-thumbnail m-2" alt="...">
-                        <div class="bodyTarjeta row container">
-                            <h5 class="col-12">Iphone 15 Pro Max 256GB</h5>
-                            <p class="col-12">Valor: $1690 USD</p>
-                            <a href="https://wa.me/1156634529?text=Hola!%20Me%20interesa%20un%20producto de su página,%20quisiera%20tener%20mas%20información." target="_blank" class="col-8 mx-1 my-3 d-flex justify-content-center align-content-center button" id="A">Consultar</a>
-                        </div>
-                    </div>
-                    <div class="box1 row col-12 col-md-3 m-3 p-3">
-                        <img src="./assets/img/prueba.png" class="col-10 img-thumbnail m-2" alt="...">
-                        <div class="bodyTarjeta row container">
-                            <h5 class="col-12">Iphone 14 Pro Max 128GB</h5>
-                            <p class="col-12">Valor: $1160 USD</p>
-                            <a href="https://wa.me/1156634529?text=Hola!%20Me%20interesa%20un%20producto de su página,%20quisiera%20tener%20mas%20información." target="_blank" class="col-8 mx-1 my-3 d-flex justify-content-center align-content-center button" id="A">Consultar</a>
-                        </div>
-                    </div>
-                    <div class="box1 row col-12 col-md-3 m-3 p-3">
-                        <img src="./assets/img/prueba.png" class="col-10 img-thumbnail m-2" alt="...">
-                        <div class="bodyTarjeta row container">
-                            <h5 class="col-12">Iphone 14 Pro Max 256GB</h5>
-                            <p class="col-12">Valor: $1260 USD</p>
-                            <a href="https://wa.me/1156634529?text=Hola!%20Me%20interesa%20un%20producto de su página,%20quisiera%20tener%20mas%20información." target="_blank" class="col-8 mx-1 my-3 d-flex justify-content-center align-content-center button" id="A">Consultar</a>
-                        </div>
-                    </div>
-                    <div class="box1 row col-12 col-md-3 m-3 p-3">
-                        <img src="./assets/img/prueba.png" class="col-10 img-thumbnail m-2" alt="...">
-                        <div class="bodyTarjeta row container">
-                            <h5 class="col-12">Iphone 13 128GB</h5>
-                            <p class="col-12">Valor: $730 USD</p>
-                            <a href="https://wa.me/1156634529?text=Hola!%20Me%20interesa%20un%20producto de su página,%20quisiera%20tener%20mas%20información." target="_blank" class="col-8 mx-1 my-3 d-flex justify-content-center align-content-center button" id="A">Consultar</a>
-                        </div>
-                    </div>
-                    <div class="box1 row col-12 col-md-3 m-3 p-3">
-                        <img src="./assets/img/prueba.png" class="col-10 img-thumbnail m-2" alt="...">
-                        <div class="bodyTarjeta row container">
-                            <h5 class="col-12">Iphone 11 64GB</h5>
-                            <p class="col-12">Valor: $480 USD</p>
-                            <a href="https://wa.me/1156634529?text=Hola!%20Me%20interesa%20un%20producto de su página,%20quisiera%20tener%20mas%20información." target="_blank" class="col-8 mx-1 my-3 d-flex justify-content-center align-content-center button" id="A">Consultar</a>
-                        </div>
-                    </div>
-                    <div class="box1 row col-12 col-md-3 m-3 p-3">
-                        <img src="./assets/img/prueba.png" class="col-10 img-thumbnail m-2" alt="...">
-                        <div class="bodyTarjeta row container">
-                            <h5 class="col-12">Iphone XR 64GB</h5>
-                            <p class="col-12">Valor: $390 USD</p>
-                            <a href="https://wa.me/1156634529?text=Hola!%20Me%20interesa%20un%20producto de su página,%20quisiera%20tener%20mas%20información." target="_blank" class="col-8 mx-1 my-3 d-flex justify-content-center align-content-center button" id="A">Consultar</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="row justify-content-center col-7 collapse multi-collapse2" id="multiCollapseExampleB">
-                    <div><h2>Consolas</h2></div>
-                    <div class="box1 row col-3 m-3 p-3">
-                        <img src="./assets/img/prueba.png" class="col-10 img-thumbnail m-2" alt="...">
-                        <div class="bodyTarjeta row container">
-                            <h5 class="col-12">PS5 Standard</h5>
-                            <p class="col-12">Sony PlayStation 5 Edición Estandar + GOW/COD + 1 Joystick</p>
-                            <p class="col-12">Valor: $720 USD</p>
-                            <button class="col-8 mx-1 my-3 d-flex justify-content-center align-content-center button" id="A">Comprar</button>
-                        </div>
-                    </div>
-                    <div class="box1 row col-3 m-3 p-3">
-                        <img src="./assets/img/prueba.png" class="col-10 img-thumbnail m-2" alt="...">
-                        <div class="bodyTarjeta row container">
-                            <h5 class="col-12">Sony PS5 825GB Spiderman 2 Edition</h5>
-                            <p class="col-12">Play Station 5 Edición Spiderman + Spiderman 2 por encargue de 7 a 10 días hábiles. Abonas cuando recibís</p>
-                            <p class="col-12">Valor: $1000 USD</p>
-                            <button class="col-8 mx-1 my-3 d-flex justify-content-center align-content-center button" id="A">Encargar</button>
-                        </div>
-                    </div>
-                    <div class="box1 row col-3 m-3 p-3">
-                        <img src="./assets/img/prueba.png" class="col-10 img-thumbnail m-2" alt="...">
-                        <div class="bodyTarjeta row container">
-                            <h5 class="col-12">Joystick PS5</h5>
-                            <p class="col-12">Joystick Inalámbrico Sony Playstation Dualsense Ps5 White</p>
-                            <p class="col-12">Valor: $69.000 ARS</p>
-                            <button class="col-8 mx-1 my-3 d-flex justify-content-center align-content-center button" id="A">Comprar</button>
-                        </div>
-                    </div>
-                    <div class="box1 row col-3 m-3 p-3">
-                        <img src="./assets/img/prueba.png" class="col-10 img-thumbnail m-2" alt="...">
-                        <div class="bodyTarjeta row container">
-                            <h5 class="col-12">Nintendo Switch OLED 64GB</h5>
-                            <p class="col-12">Nintendo Switch OLED 64GB Standard White/Neón</p>
-                            <p class="col-12">Valor: $385 USD</p>
-                            <button class="col-8 mx-1 my-3 d-flex justify-content-center align-content-center button" id="A">Comprar</button>
-                        </div>
-                    </div>
-                    <div class="box1 row col-3 m-3 p-3">
-                        <img src="./assets/img/prueba.png" class="col-10 img-thumbnail m-2" alt="...">
-                        <div class="bodyTarjeta row container">
-                            <h5 class="col-12">Nintendo Switch OLED 64GB</h5>
-                            <p class="col-12">Nintendo Switch 64GB OLED - Splatoon 3 / Pokemon Scarlet & Violet Edition</p>
-                            <p class="col-12">Valor: $420 USD</p>
-                            <button class="col-8 mx-1 my-3 d-flex justify-content-center align-content-center button" id="A">Comprar</button>
-                        </div>
-                    </div>
-                    <div class="box1 row col-3 m-3 p-3">
-                        <img src="./assets/img/prueba.png" class="col-10 img-thumbnail m-2" alt="...">
-                        <div class="bodyTarjeta row container">
-                            <h5 class="col-12">Xbox One Series X 1Tb</h5>
-                            <p class="col-12">Xbox One Series X 1Tb Black por encargue de 7 a 10 días hábiles. Abonas cuando recibís</p>
-                            <p class="col-12">Valor: $726 USD</p>
-                            <button class="col-8 mx-1 my-3 d-flex justify-content-center align-content-center button" id="A">Encargar</button>
-                        </div>
-                    </div>
-                    <div class="box1 row col-3 m-3 p-3">
-                        <img src="./assets/img/prueba.png" class="col-10 img-thumbnail m-2" alt="...">
-                        <div class="bodyTarjeta row container">
-                            <h5 class="col-12">Xbox One Series S 512GB Digital</h5>
-                            <p class="col-12">Xbox One Series S 512GB White Digital por encargue de 7 a 10 días hábiles. Abonas cuando recibís</p>
-                            <p class="col-12">Valor: $426 USD</p>
-                            <button class="col-8 mx-1 my-3 d-flex justify-content-center align-content-center button" id="A">Encargar</button>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </main>

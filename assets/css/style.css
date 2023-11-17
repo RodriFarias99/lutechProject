@@ -83,6 +83,8 @@ header{
         color: white;
     }
 }
+
+
 footer{
     background: linear-gradient(105deg, #104750 19%, #1c747a);
     border-top-right-radius: 10px;
@@ -116,6 +118,7 @@ td{
 }
 .btn{
     color: white;
+    transition: 0.2s all;;
 }
 
 .dolarBox{

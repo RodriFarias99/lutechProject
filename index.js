@@ -1,14 +1,21 @@
 const resultado = document.querySelector('#resultado');
 const contenedorProductos = document.querySelector('#contenedorProductos');
 const contenedorPrecios = document.querySelector('#contenedorPrecios');
+const iphoneBtn = document.getElementById('iphone');
+const consolaBtn = document.getElementById('consola');
+const todoBtn = document.getElementById('todo');
 const formulario = document.querySelector('#formulario');
 const apiStock = "../json/stock.json";
 let productos=[];
+let statusA = 0;
+let statusB = 0;
+let statusC = 0;
 
 class articulo{
-    constructor(nombre, detail, precio, pic, text){
+    constructor(nombre, detail, categoria, precio, pic, text){
         this.nombre = nombre.toUpperCase();
         this.detail = detail;
+        this.categoria = categoria;
         this.precio = precio;
         this.pic = pic;
         this.text = text;
@@ -24,7 +31,33 @@ fetch(apiStock)
     })
     .catch(error => console.log(error))
 
-
+iphoneBtn.onclick = () => {
+    if(statusA == 0){
+        iphoneBtn.style.backgroundColor = "#0f4452";
+        statusA = 1;
+    }else{
+        iphoneBtn.style.backgroundColor = "#187178";
+        statusA = 0;
+    }
+}
+consolaBtn.onclick = () => {
+    if(statusB == 0){
+        consolaBtn.style.backgroundColor = "#0f4452";
+        statusB = 1;
+    }else{
+        consolaBtn.style.backgroundColor = "#187178";
+        statusB = 0;
+    }
+}
+todoBtn.onclick = () => {
+    if(statusC == 0){
+        todoBtn.style.backgroundColor = "#187178";
+        statusC = 1;
+    }else{
+        todoBtn.style.backgroundColor = "#0f4452";
+        statusC = 0;
+    }
+}
 
 const catalogo = () =>{   
     let c=0;
@@ -33,9 +66,10 @@ const catalogo = () =>{
         const divProducto = document.createElement("div");
         divProducto.classList.add("row", "justify-content-center", "col-12", "col-md-3", "m-1");
         divPrecios.classList.add("p-4");
+        if(prod.categoria == "iphone"){
         divProducto.innerHTML = `
                     
-            <div class="box1 row justify-content-center col-12 m-1 p-2">
+            <div class="box1 row justify-content-center col-12 m-1 p-2 show multi-collapse2" id="multiCollapseExampleA">
                     <img src=${prod.pic} class="col-10 img-thumbnail m-2" alt="...">
                     <div class="bodyTarjeta row container">
                         <h5 class="col-12">${prod.nombre}</h5>
@@ -46,6 +80,20 @@ const catalogo = () =>{
                 </div>
                     
             `;
+        }if (prod.categoria == "consola") {
+            divProducto.innerHTML = `
+            <div class="box1 row justify-content-center col-12 m-1 p-2 show multi-collapse2" id="multiCollapseExampleB">
+                    <img src=${prod.pic} class="col-10 img-thumbnail m-2" alt="...">
+                    <div class="bodyTarjeta row container">
+                        <h5 class="col-12">${prod.nombre}</h5>
+                        <p class="col-12">${prod.detail}</p>
+                        <p class="col-12">Valor: $${prod.precio} USD</p>
+                        <a href=${prod.text} target="_blank" class="col-8 mx-1 my-3 d-flex justify-content-center align-content-center button" id="A">Consultar</a>
+                    </div>
+                </div>
+                    
+            `;
+        }
         if(c==0){
             divPrecios.innerHTML = `
             <tr>
