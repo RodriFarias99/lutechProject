@@ -22,8 +22,11 @@ a{
     background-color: #15545e;
     border-radius: 10px;
 }
-.topText{
+.topTextA, .topTextB{
     font-size: 1.5rem;
+}
+.topTextB{
+    text-align: center;
 }
 
 body{
